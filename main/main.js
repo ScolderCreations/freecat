@@ -20,7 +20,7 @@ function createWindow() {
       : 600,
     webPreferences: {
       icon:
-        process.platform == "win32"
+        process.platform === "win32"
           ? path.join(__dirname, "./icons/seconds.ico")
           : path.join(__dirname, "./icons/seconds.svg"),
       webviewTag: true,
